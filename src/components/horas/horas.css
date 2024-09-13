@@ -1,0 +1,75 @@
+.modal-background {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(3px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.modal-content {
+  height: max-content;
+  width: 360px;
+  min-height: 50px;
+  margin: 30px 30px 40px;
+  border-radius: 10px;
+  display: flex;
+  padding: 8px;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid rgb(255, 255, 255);
+  background-color: rgb(3, 51, 33);
+}
+
+button {
+  padding: 8px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #555;
+  color: #fff;
+}
+
+.content-ul {
+  height: 400px;
+  width: 360px;
+  list-style-type: none;
+  overflow: scroll;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 5px;
+  margin: 0 30px;
+  background-color: rgb(3, 51, 33);
+}
+.content-ul::-webkit-scrollbar {
+  display: none;
+}
+.li {
+  height: 30px;
+  width: 100%;
+  border: 1px solid #fff;
+  margin: 5px 0;
+  padding: 2px 0 0 5px;
+  border-radius: 4px;
+  background-color: rgba(44, 223, 53, 0.671);
+  color: rgb(255, 255, 255);
+}
+.li:hover {
+  background-color: #6868687e;
+  cursor: pointer;
+}
+.horas-text {
+  width: 360px;
+  font-size: 17px;
+  margin: 10px 30px;
+}
+@media (min-width: 1000px) {
+  .modal-background {
+    align-items: center;
+  }
+}
